@@ -105,7 +105,7 @@ export default class Topbar extends React.Component {
     let control = []
     let formOnSubmit = null
 
-    if(urls) {
+    /*if(urls) {
       let rows = []
       urls.forEach((link, i) => {
         rows.push(<option key={i} value={link.url}>{link.name}</option>)
@@ -123,15 +123,15 @@ export default class Topbar extends React.Component {
       formOnSubmit = this.downloadUrl
       control.push(<input className="download-url-input" type="text" onChange={ this.onUrlChange } value={this.state.url} disabled={isLoading} style={inputStyle} />)
       control.push(<Button className="download-url-button" onClick={ this.downloadUrl }>Explore</Button>)
-    }
+    }*/
 
     return (
       <div className="topbar">
         <div className="wrapper">
           <div className="topbar-wrapper">
-            <Link href="#" title="Swagger UX">
-              <img height="30" width="30" src={ Logo } alt="Swagger UI"/>
-              <span>swagger</span>
+            <Link href="#" title="Avalara Brazil API">
+              <img height="30" src={ Logo } alt="Brazil API"/>
+              <span>Brazil API</span>
             </Link>
             <form className="download-url-wrapper" onSubmit={formOnSubmit}>
               {control}

@@ -91,7 +91,7 @@ To use swagger-ui's bundles, you should take a look at the [source of swagger-ui
 
 ```javascript
   const ui = SwaggerUIBundle({
-      url: "http://petstore.swagger.io/v2/swagger.json",
+      url: "https://avataxbr-sandbox.avalarabrasil.com.br/docs/index/api/index.json",
       dom_id: '#swagger-ui',
       presets: [
         SwaggerUIBundle.presets.apis,

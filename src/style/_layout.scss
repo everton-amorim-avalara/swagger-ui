@@ -565,10 +565,10 @@
 
         a
         {
-            @include text_code(#89bf04);
+            @include text_code(#ff6600);
             text-decoration: underline;
             &:hover {
-                color: #81b10c;
+                color: #e65000;//e65000
             }
         }
     }
